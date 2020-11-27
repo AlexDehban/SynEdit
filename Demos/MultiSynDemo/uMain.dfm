@@ -1,9 +1,9 @@
 object frmMain: TfrmMain
   Left = 192
   Top = 107
-  Width = 564
-  Height = 395
   Caption = 'MultiHighlight HTML Demo'
+  ClientHeight = 336
+  ClientWidth = 754
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -19,8 +19,8 @@ object frmMain: TfrmMain
   object SynEdit1: TSynEdit
     Left = 185
     Top = 0
-    Width = 371
-    Height = 322
+    Width = 569
+    Height = 317
     Align = alClient
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
@@ -29,6 +29,14 @@ object frmMain: TfrmMain
     Font.Pitch = fpFixed
     Font.Style = []
     TabOrder = 0
+    CodeFolding.GutterShapeSize = 11
+    CodeFolding.CollapsedLineColor = clGrayText
+    CodeFolding.FolderBarLinesColor = clGrayText
+    CodeFolding.IndentGuidesColor = clGray
+    CodeFolding.IndentGuides = True
+    CodeFolding.ShowCollapsedLine = False
+    CodeFolding.ShowHintMark = True
+    UseCodeFolding = False
     Gutter.AutoSize = True
     Gutter.DigitCount = 2
     Gutter.Font.Charset = DEFAULT_CHARSET
@@ -44,6 +52,8 @@ object frmMain: TfrmMain
     Options = [eoAutoIndent, eoKeepCaretX, eoShowScrollHint, eoSmartTabs, eoTabsToSpaces, eoTrimTrailingSpaces]
     WantTabs = True
     OnStatusChange = SynEdit1StatusChange
+    FontSmoothing = fsmNone
+    ExplicitWidth = 363
     RemovedKeystrokes = <
       item
         Command = ecLineBreak
@@ -57,17 +67,18 @@ object frmMain: TfrmMain
   end
   object StatusBar1: TStatusBar
     Left = 0
-    Top = 322
-    Width = 556
+    Top = 317
+    Width = 754
     Height = 19
     Panels = <>
     SimplePanel = True
+    ExplicitWidth = 548
   end
   object Panel1: TPanel
     Left = 0
     Top = 0
     Width = 185
-    Height = 322
+    Height = 317
     Align = alLeft
     TabOrder = 2
     object Label1: TLabel
@@ -86,7 +97,7 @@ object frmMain: TfrmMain
       Left = 1
       Top = 82
       Width = 183
-      Height = 239
+      Height = 234
       Align = alClient
       ItemHeight = 13
       Items.Strings = (
@@ -111,6 +122,9 @@ object frmMain: TfrmMain
     end
   end
   object SynCssSyn1: TSynCssSyn
+    Options.AutoDetectEnabled = False
+    Options.AutoDetectLineLimit = 0
+    Options.Visible = False
     CommentAttri.Foreground = clGray
     NumberAttri.Foreground = clFuchsia
     AttributeAttri.Foreground = clNavy
@@ -122,6 +136,9 @@ object frmMain: TfrmMain
     Top = 64
   end
   object SynMultiSyn1: TSynMultiSyn
+    Options.AutoDetectEnabled = False
+    Options.AutoDetectLineLimit = 0
+    Options.Visible = False
     Schemes = <
       item
         StartExpr = '<style type="text/css">'
@@ -161,6 +178,9 @@ object frmMain: TfrmMain
   end
   object SynHTMLSyn1: TSynHTMLSyn
     DefaultFilter = 'HTML Document (*.htm,*.html)|*.htm;*.html'
+    Options.AutoDetectEnabled = False
+    Options.AutoDetectLineLimit = 0
+    Options.Visible = False
     CommentAttri.Foreground = clGray
     CommentAttri.Style = [fsItalic]
     SymbolAttri.Foreground = clNavy
@@ -170,6 +190,9 @@ object frmMain: TfrmMain
   end
   object SynJScriptSyn1: TSynJScriptSyn
     DefaultFilter = 'JavaScript files (*.js)|*.js'
+    Options.AutoDetectEnabled = False
+    Options.AutoDetectLineLimit = 0
+    Options.Visible = False
     CommentAttri.Foreground = clGray
     IdentifierAttri.Foreground = clTeal
     IdentifierAttri.Style = [fsBold]

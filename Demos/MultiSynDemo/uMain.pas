@@ -52,7 +52,7 @@ uses
   Windows, Messages, SysUtils, Classes, Graphics, Controls, Forms, Dialogs,
   SynCompletionProposal, SynHighlighterJScript, SynHighlighterHTML,
   SynHighlighterMulti, SynEditHighlighter, SynHighlighterCss, SynEdit,
-  Menus, StdCtrls, ComCtrls, ExtCtrls;
+  Menus, StdCtrls, ComCtrls, ExtCtrls, SynEditCodeFolding;
 
 type
   TfrmMain = class(TForm)

@@ -7,7 +7,7 @@
         <TargetedPlatforms>1</TargetedPlatforms>
         <AppType>Package</AppType>
         <FrameworkType>None</FrameworkType>
-        <ProjectVersion>18.5</ProjectVersion>
+        <ProjectVersion>18.8</ProjectVersion>
         <Platform Condition="'$(Platform)'==''">Win32</Platform>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Config)'=='Base' or '$(Base)'!=''">
@@ -133,7 +133,6 @@
                 </VersionInfoKeys>
             </Delphi.Personality>
             <Platforms>
-                <Platform value="Linux64">False</Platform>
                 <Platform value="Win32">True</Platform>
             </Platforms>
         </BorlandProject>
